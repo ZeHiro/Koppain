@@ -1,4 +1,7 @@
 americano = require 'americano'
-
-port = process.env.PORT || 9250
-americano.start name: 'template', port: port
+params = 
+    name: 'koppain'
+    port: process.env.PORT || 9250
+    host: process.env.HOST or '127.0.0.1'
+    root: __dirname
+americano.start params
