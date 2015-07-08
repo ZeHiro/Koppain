@@ -1,0 +1,43 @@
+{
+  "name": "koppain",
+  "version": "0.0.1",
+  "engines": [
+    "node = 0.10.x"
+  ],
+  "description": "An app to compute shared accounts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZeHiro/koppain.git"
+  },
+  "main": "server.coffee",
+  "dependencies": {
+    "americano": "0.4.2",
+    "cozydb": "0.0.17",
+    "async": "1.2.1"
+  },
+  "devDependencies": {
+    "should": "4.0.1",
+    "mocha": "1.20.1",
+    "request-json": "0.5.3",
+    "cozy-fixtures": "1.1.1",
+    "coffeelint": "1.5.1",
+    "printit": "^0.1.3"
+  },
+  "scripts": {
+    "test": "cake tests",
+    "start": "node build/server.js"
+  },
+  "cozy-permissions": {
+    "Group": {
+      "description": "Les groupes."
+    },
+    "Contact": {
+        "description": "Les contacts"
+    },
+    "Balance": {
+        "description": "Les balances"
+    }
+    },
+  "cozy-displayName": "Koppain"
+}
